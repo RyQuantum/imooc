@@ -1,3 +1,4 @@
+'use strict';
 const mongoose = require('mongoose');
 const DB_URL = 'mongodb://ryan:ryan@ds119406.mlab.com:19406/imooc-chat';
 mongoose.connect(DB_URL);
