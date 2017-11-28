@@ -8,7 +8,6 @@ const LOAD_DATA = 'LOAD_DATA';
 const initState = {
   msg: '',
   user: '',
-  pwd: '',
   type: ''
 };
 

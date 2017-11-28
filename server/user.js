@@ -8,8 +8,9 @@ const User = models.getModel('user');
 const _filter = {pwd: 0, __v: 0};
 
 Router.get('/list', async (req, res) => {
-  const doc = await User.find({});
-  return res.json(doc);
+  const {type} = req.query;
+  const doc = await User.find({type});
+  return res.json({code: 0, data: doc});
 })
 
 Router.post('/update', async (req, res) => {
